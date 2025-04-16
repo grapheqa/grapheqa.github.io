@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="GraphEQA is a novel approach that utilizes real-time 3D metric-semantic scene graphs (3DSG) and task relevant images as multi-modal memory for grounding Vision-Language Models (VLMs) to perform EQA tasks in unseen environments.">
+  <meta name="keywords" content="EQA, embodied question answering, scene graph">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -42,45 +42,45 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation"> -->
+<!--   <div class="navbar-brand"> -->
+<!--     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"> -->
+<!--       <span aria-hidden="true"></span> -->
+<!--       <span aria-hidden="true"></span> -->
+<!--       <span aria-hidden="true"></span> -->
+<!--     </a> -->
+<!--   </div> -->
+<!--   <div class="navbar-menu"> -->
+<!--     <div class="navbar-start" style="flex-grow: 1; justify-content: center;"> -->
+<!--       <a class="navbar-item" href="https://keunhong.com"> -->
+<!--       <span class="icon"> -->
+<!--           <i class="fas fa-home"></i> -->
+<!--       </span> -->
+<!--       </a> -->
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
+<!--       <div class="navbar-item has-dropdown is-hoverable"> -->
+<!--         <a class="navbar-link"> -->
+<!--           More Research -->
+<!--         </a> -->
+<!--         <div class="navbar-dropdown"> -->
+<!--           <a class="navbar-item" href="https://hypernerf.github.io"> -->
+<!--             HyperNeRF -->
+<!--           </a> -->
+<!--           <a class="navbar-item" href="https://nerfies.github.io"> -->
+<!--             Nerfies -->
+<!--           </a> -->
+<!--           <a class="navbar-item" href="https://latentfusion.github.io"> -->
+<!--             LatentFusion -->
+<!--           </a> -->
+<!--           <a class="navbar-item" href="https://photoshape.github.io"> -->
+<!--             PhotoShape -->
+<!--           </a> -->
+<!--         </div> -->
+<!--       </div> -->
+<!--     </div> -->
 
-  </div>
-</nav>
+<!--   </div> -->
+<!-- </nav> -->
 
 
 <section class="hero">
@@ -88,39 +88,13 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
-          </div>
+          <h1 class="title is-1 publication-title">GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering</h1>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://www.google.com"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +103,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://www.google.com"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -138,7 +112,7 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -146,26 +120,26 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/grapheqa/graph_eqa"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (coming soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                </a> -->
             </div>
 
           </div>
@@ -178,77 +152,25 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+      <video id="teaser" autoplay controls muted loop playsinline height="10%">
+        <source src="./static/videos/grapheqa_bluepan_norobot_fast_actual.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="dnerf">GraphEQA</span> deployed on the <a href="https://hello-robot.com/">Hello Robot</a> Stretch RE2 platform in a home environment. 
+        <br> Question: <i>"Is there a blue pan on the stove?"</i> 
+        <br> 
+        <span style="text-align: left; display: block;">
+          Left panel: Robot navigating a home, while planning and mapping the environment in real-time; captured via an externally mounted camera. 
+          <br> 
+          Right panel: Metric-semantic 3D mesh and scene graph construction from <a href="https://github.com/MIT-SPARK/Hydra?tab=readme-ov-file">Hydra</a>. TSDF-based 2D occupancy map where white nodes represent explored areas, red nodes are obstacles, blue nodes are clustered frontiers. Green node shows the target location chosen by the planner. 
+          <br> 
+          Right panel inset: Video feed from the robot head camera.
+      </span>
       </h2>
     </div>
   </div>
 </section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -256,33 +178,12 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
+        <div class="method-image">
+          <img src="./static/images/main_figure_02.png" alt="A depiction of GraphEQA in simulation." />
+        </div>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            In Embodied Question Answering (EQA), agents must explore and develop a semantic understanding of an unseen environment in order to answer a situated question with confidence. This remains a challenging problem in robotics, due to the difficulties in obtaining useful semantic representations, updating these representations online, and leveraging prior world knowledge for efficient exploration and planning. Aiming to address these limitations, we propose GraphEQA, a novel approach that utilizes real-time 3D metric-semantic scene graphs (3DSG) and task relevant images as multi-modal memory for grounding Vision-Language Models (VLMs) to perform EQA tasks in unseen environments. We employ a hierarchical planning approach that exploits the hierarchical nature of 3DSGs for structured planning and semantic-guided exploration. Through experiments in simulation on the HM-EQA dataset and in the real world, we demonstrate that our method outperforms key baselines by completing EQA tasks with higher success rate and fewer planning steps.
           </p>
         </div>
       </div>
@@ -290,151 +191,227 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered"> -->
+    <!--   <div class="column is-four-fifths"> -->
+    <!--     <h2 class="title is-3">Video</h2> -->
+    <!--     <div class="publication-video"> -->
+    <!--       <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" -->
+    <!--               frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    <!--/ Paper video. -->
+
+    <!-- Method image. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h2 class="title is-3">Method</h2>
+        <div class="method-image">
+          <img src="./static/images/method.png" alt="The overall GraphEQA method." />
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Overall GraphEQA architecture. As the agent explores the environment, it used its sensor data (RGBD images, semantic map, camera poses and intrinsics) to construct a 3D metric-semantic hierarchical scene graph (3DSG) as well as a 2D occupancy map for frontier selection in real time. The constructed 3DSG is then enriched with semantic room labels and semantically-enriched frontiers. From the set of images collected during each trajectory execution, a task-relevant subset is selected, called the task-relevant visual memory. A VLM-based planner takes as input the enriched scene graph, task-relevant visual memory, a history of past states and actions, and the embodied question and outputs the answer, its confidence in the selected answer, and the next step it needs to take in the environment. If the VLM agent is confident in its answer, the episode is terminated, else the proposed action is executed in the environment and the process repeats.
+          </p>
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
+    <!--/ Method image. -->
+
+     <!-- VLM Planner image. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Hierarchical VLM Planner Architecture</h2>
+        <div class="method-image">
+          <img src="./static/images/vlm_planner_architecture.png" width="60%" alt="The overall GraphEQA method." />
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            The Hierarchical Vision-Language planner takes as input the question, enriched scene graph, task-relevant visual memory, current state of the robot (position and room) and a history of past states, actions, answers and confidence values. The planner chooses the next <i>Goto_Object_node</i> action hierarchically by first selecting the room node and then the object node. The <i>Goto_Frontier_node</i> action is chosen based on the object nodes connected to the frontier via edges in the scene graph. The planner is asked to output a brief reasoning behind choosing each action. The planner also outputs an answer, confidence in its answer, reasoning behind the answer and confidence, the next action, a brief description of the scene graph and the visual memory.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ VLM Planner image. -->
+
+    <!-- Results image. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="method-image">
+          <img src="./static/images/grapheqa_baselines_table.png" width="60%" alt="The results." />
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We compare the performance of GraphEQA against competitive baselines in simulation in the Habitat-Sim environment on the HM3D-EQA dataset and in the real-world in two indoor environments: home and office. 
+            The above table shows comparison to baselines in simulation using metrics: average success rate (%), average number of VLM planning steps, and average trajectory length L<sub>&tau;</sub>. We compare against a strong baseline, <a href="https://explore-eqa.github.io/">Explore-EQA</a>, which calibrates Prismatic-VLM to answer embodied questions confidently. We also compare against Explore-EQA-GPT4o, a version of Explore-EQA which used GPT-4o instead of Prismatic-VLM. Finally, we compare against SayPlanVision, a modified version of
+            <a href="https://sayplan.github.io/">SayPlan</a>, which in addition to the full scene graph also has access to task-relevant visual memory. 
+            We observe that GraphEQA has higher success rate as compared to Explore-EQA and Explore-EQA-GPT4o, without the need to build an explicit 2D semantic task-specific memory. 
+            Compared to Explore-EQA, our method completes the task in significantly lower planning steps and navigates the environment more efficiently (lower trajectory length). Explore-EQA-GPT4o has lower success rates but also has lower planning steps. Qualitative results show that Explore-EQA-GPT4o tends to be overconfident and terminates the episode early.
+            GraphEQA outperforms SayPlanVision, without needing access to the complete scene graph.
+            Qualitatively, we observe that given access to the complete scene graph, SayPlanVision is overconfident about its choice of object node actions, leading to shorter trajectory lengths in successful cases, but also to increased failure cases.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Results image. -->
   </div>
 </section>
 
+<div style="display: flex; justify-content: center;">
+  <h2 class="title is-3">Additional Real-world Experiments</h2>
+</div>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/grapheqa_door_question_compressed_cropped_fast.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-cushions">
+          <video poster="" id="cushions" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/grapheqa_couch_cushions_question_v2_compressed_cropped_fast.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-handbag">
+          <video poster="" id="handbag" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/grapheqa_handbag_question_v2_compressed_cropped_fast.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-trashcan">
+          <video poster="" id="trashcan" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/grapheqa_trashcan_question_v2_compressed_cropped_fast.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered"> -->
 
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
+    <!--   <\!-- Visual Effects. -\-> -->
+    <!--   <div class="column"> -->
+    <!--     <div class="content"> -->
+    <!--       <h2 class="title is-3">Visual Effects</h2> -->
+    <!--       <p> -->
+    <!--         Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect -->
+    <!--         would be impossible without nerfies since it would require going through a wall. -->
+    <!--       </p> -->
+    <!--       <video id="dollyzoom" autoplay controls muted loop playsinline height="100%"> -->
+    <!--         <source src="./static/videos/dollyzoom-stacked.mp4" -->
+    <!--                 type="video/mp4"> -->
+    <!--       </video> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!--   <\!--/ Visual Effects. -\-> -->
 
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
+    <!--   <\!-- Matting. -\-> -->
+    <!--   <div class="column"> -->
+    <!--     <h2 class="title is-3">Matting</h2> -->
+    <!--     <div class="columns is-centered"> -->
+    <!--       <div class="column content"> -->
+    <!--         <p> -->
+    <!--           As a byproduct of our method, we can also solve the matting problem by ignoring -->
+    <!--           samples that fall outside of a bounding box during rendering. -->
+    <!--         </p> -->
+    <!--         <video id="matting-video" controls playsinline height="100%"> -->
+    <!--           <source src="./static/videos/matting.mp4" -->
+    <!--                   type="video/mp4"> -->
+    <!--         </video> -->
+    <!--       </div> -->
 
-        </div>
-      </div>
-    </div>
+    <!--     </div> -->
+    <!--   </div> -->
+    <!-- </div> -->
     <!--/ Matting. -->
 
     <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+    <!-- <div class="columns is-centered"> -->
+    <!--   <div class="column is-full-width"> -->
+    <!--     <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
+        <!-- <h3 class="title is-4">Interpolating states</h3> -->
+        <!-- <div class="content has-text-justified"> -->
+        <!--   <p> -->
+        <!--     We can also animate the scene by interpolating the deformation latent codes of two input -->
+        <!--     frames. Use the slider here to linearly interpolate between the left frame and the right -->
+        <!--     frame. -->
+        <!--   </p> -->
+        <!-- </div> -->
+        <!-- <div class="columns is-vcentered interpolation-panel"> -->
+        <!--   <div class="column is-3 has-text-centered"> -->
+        <!--     <img src="./static/images/interpolate_start.jpg" -->
+        <!--          class="interpolation-image" -->
+        <!--          alt="Interpolate start reference image."/> -->
+        <!--     <p>Start Frame</p> -->
+        <!--   </div> -->
+        <!--   <div class="column interpolation-video-column"> -->
+        <!--     <div id="interpolation-image-wrapper"> -->
+        <!--       Loading... -->
+        <!--     </div> -->
+        <!--     <input class="slider is-fullwidth is-large is-info" -->
+        <!--            id="interpolation-slider" -->
+        <!--            step="1" min="0" max="100" value="0" type="range"> -->
+        <!--   </div> -->
+        <!--   <div class="column is-3 has-text-centered"> -->
+        <!--     <img src="./static/images/interpolate_end.jpg" -->
+        <!--          class="interpolation-image" -->
+        <!--          alt="Interpolation end reference image."/> -->
+        <!--     <p class="is-bold">End Frame</p> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <!-- <br/> -->
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3> -->
+        <!-- <div class="content has-text-justified"> -->
+        <!--   <p> -->
+        <!--     Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel -->
+        <!--     viewpoint such as a stabilized camera by playing back the training deformations. -->
+        <!--   </p> -->
+        <!-- </div> -->
+        <!-- <div class="content has-text-centered"> -->
+        <!--   <video id="replay-video" -->
+        <!--          controls -->
+        <!--          muted -->
+        <!--          preload -->
+        <!--          playsinline -->
+        <!--          width="75%"> -->
+        <!--     <source src="./static/videos/replay.mp4" -->
+        <!--             type="video/mp4"> -->
+        <!--   </video> -->
+        <!-- </div> -->
         <!--/ Re-rendering. -->
 
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
     <!--/ Animation. -->
 
 
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            Some stuff about GraphEQA here.
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Concurrent Work. -->
 
   </div>
@@ -444,11 +421,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{grapheqa2024,
+  author    = {Anonymous Author},
+  title     = {GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering},
+  journal   = {arXiv},
+  year      = {20XX},
 }</code></pre>
   </div>
 </section>
@@ -474,11 +451,9 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website was built upon the Nerfies website, available at <a
+              href="https://github.com/nerfies/nerfies.github.io">this link</a>.
+
           </p>
         </div>
       </div>
