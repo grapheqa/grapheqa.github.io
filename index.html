@@ -183,7 +183,7 @@
         </div>
         <div class="content has-text-justified">
           <p>
-            In Embodied Question Answering (EQA), agents must explore and develop a semantic understanding of an unseen environment in order to answer a situated question with confidence. This remains a challenging problem in robotics, due to the difficulties in obtaining useful semantic representations, updating these representations online, and leveraging prior world knowledge for efficient exploration and planning. Aiming to address these limitations, we propose GraphEQA, a novel approach that utilizes real-time 3D metric-semantic scene graphs (3DSG) and task relevant images as multi-modal memory for grounding Vision-Language Models (VLMs) to perform EQA tasks in unseen environments. We employ a hierarchical planning approach that exploits the hierarchical nature of 3DSGs for structured planning and semantic-guided exploration. Through experiments in simulation on the HM-EQA dataset and in the real world, we demonstrate that our method outperforms key baselines by completing EQA tasks with higher success rate and fewer planning steps.
+            In Embodied Question Answering (EQA), agents must explore and develop a semantic understanding of an unseen environment to answer a situated question with confidence. This problem remains challenging in robotics, due to the difficulties in obtaining useful semantic representations, updating these representations online, and leveraging prior world knowledge for efficient planning and exploration. To address these limitations, we propose \ourmethod, a novel approach that utilizes real-time 3D metric-semantic scene graphs (3DSGs) and task relevant images as multi-modal memory for grounding Vision-Language Models (VLMs) to perform EQA tasks in unseen environments. We employ a hierarchical planning approach that exploits the hierarchical nature of 3DSGs for structured planning and semantics-guided exploration. We evaluate \ourmethod in simulation on two benchmark datasets, HM-EQA and OpenEQA, and demonstrate that it outperforms key baselines by completing EQA tasks with higher success rates and fewer planning steps. We further demonstrate \ourmethod in multiple real-world home and office environments.
           </p>
         </div>
       </div>
@@ -243,13 +243,23 @@
         </div>
         <div class="content has-text-justified">
           <p>
-            We compare the performance of GraphEQA against competitive baselines in simulation in the Habitat-Sim environment on the HM3D-EQA dataset and in the real-world in two indoor environments: home and office. 
-            The above table shows comparison to baselines in simulation using metrics: average success rate (%), average number of VLM planning steps, and average trajectory length L<sub>&tau;</sub>. We compare against a strong baseline, <a href="https://explore-eqa.github.io/">Explore-EQA</a>, which calibrates Prismatic-VLM to answer embodied questions confidently. We also compare against Explore-EQA-GPT4o, a version of Explore-EQA which used GPT-4o instead of Prismatic-VLM. Finally, we compare against SayPlanVision, a modified version of
-            <a href="https://sayplan.github.io/">SayPlan</a>, which in addition to the full scene graph also has access to task-relevant visual memory. 
+            We compare the performance of GraphEQA against competitive baselines in simulation in the Habitat-Sim environment on the HM-EQA and OpenEQA datasets and in the real-world in two unique home environments. 
+            The above table shows comparison to baselines in simulation using metrics: average success rate (%), average number of VLM planning steps, and average trajectory length L<sub>&tau;</sub>.
+            We compare against several baselines and focus on methods that employ VLM-based planners for solving EQA or object goal navigation tasks. We compare against a strong baseline, <a href="https://explore-eqa.github.io/">Explore-EQA</a>, which calibrates Prismatic-VLM to answer embodied questions confidently while maintaining a 2D semantic memory and
+            using prompted images to guide exploration. Note that ExploreEQA is always executed for a pre234 specified maximum number of steps, with the highest confidence step chosen to answer the question,
+            while GraphEQA terminates based on a confidence threshold. We implement additional variants of
+            ExploreEQA with newer foundation models --- e.g., GPT4o, Llama 4 Maverick, and Gemini 2.5 Pro --- for fair comparison with respective VLM variants of GraphEQA.
+            We also compare against SayPlanVision, a modified version of <a href="https://sayplan.github.io/">SayPlan</a>, which in addition to the full scene graph also has access to task-relevant visual memory. 
             We observe that GraphEQA has higher success rate as compared to Explore-EQA and Explore-EQA-GPT4o, without the need to build an explicit 2D semantic task-specific memory. 
-            Compared to Explore-EQA, our method completes the task in significantly lower planning steps and navigates the environment more efficiently (lower trajectory length). Explore-EQA-GPT4o has lower success rates but also has lower planning steps. Qualitative results show that Explore-EQA-GPT4o tends to be overconfident and terminates the episode early.
+            Compared to Explore-EQA, our method completes the task in significantly lower planning steps and navigates the environment more efficiently (lower trajectory length). Explore-EQA-GPT4o has lower success rates but also has lower planning steps.
+            Qualitative results show that Explore-EQA-GPT4o tends to be overconfident and terminates the episode early.
             GraphEQA outperforms SayPlanVision, without needing access to the complete scene graph.
             Qualitatively, we observe that given access to the complete scene graph, SayPlanVision is overconfident about its choice of object node actions, leading to shorter trajectory lengths in successful cases, but also to increased failure cases.
+            Table 1 shows simulation results comparing GraphEQA to the above baselines on the HM-EQA and OpenEQA datasets.
+            Overall, GraphEQA outperforms all other baselines. Compared to \textbf{Explore-EQA}, our method completes tasks in significantly fewer planning steps and with lower trajectory length, indicating more efficient navigation.
+            We also observe that the GPT and Llama variants of Explore-EQA have lower success rates than Explore-EQA, with qualitative results indicating overconfidence in VLMs' predictions, leading to terminating episodes before exploring sufficiently.
+            We note that Explore-EQA's Gemini variant performs better than Explore-EQA, likely due to the inherent spatial reasoning capabilities of Gemini 2.5 Pro. 
+            GraphEQA outperforms SayPlanVision even though SayPlanVision has access to the complete scene graph.
           </p>
         </div>
       </div>
