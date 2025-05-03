@@ -270,7 +270,7 @@
 </section>
 
 <div style="display: flex; justify-content: center;">
-  <h2 class="title is-3">Additional Real-world Experiments</h2>
+  <h2 class="title is-3">Additional Real-world Experiments for Home (a)</h2>
 </div>
 <section class="hero is-light is-small">
   <div class="hero-body">
@@ -305,6 +305,32 @@
   </div>
 </section>
 
+<div style="display: flex; justify-content: center;">
+  <h2 class="title is-3">Additional Real-world Experiments for Home (b)</h2>
+</div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay controls muted loop playsinline height="10%">
+        <source src="./static/videos/grapheqa1.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">GraphEQA</span> deployed on the <a href="https://hello-robot.com/">Hello Robot</a> Stretch RE2 platform in Home Environment (b). 
+        <br> Question: <i>"What color is the dehumidifier machine?" A) Blue, B) White, C) Black</i> 
+        <br> 
+        <span style="text-align: left; display: block;">
+          Top panel: Robot navigating a home, while planning and mapping the environment in real-time; captured via an externally mounted camera. 
+          <br> 
+          Bottom left panel: Metric-semantic 3D mesh and scene graph construction from <a href="https://github.com/MIT-SPARK/Hydra?tab=readme-ov-file">Hydra</a>. TSDF-based 2D occupancy map where white nodes represent explored areas, red nodes are obstacles, blue nodes are clustered frontiers. Green node shows the target location chosen by the planner. 
+          <br> 
+          Bottom panel inset: Video feed from the robot head camera.
+      </span>
+      </h2>
+    </div>
+  </div>
+</section>
+  
 <section class="section">
   <div class="container is-max-desktop">
 
